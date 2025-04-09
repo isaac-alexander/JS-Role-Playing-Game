@@ -76,11 +76,11 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;"
   },
-  { 
-    name: "win", 
-    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
-    "button functions": [restart, restart, restart], 
-    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;" 
+  {
+    name: "win",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
   },
   {
     name: "easter egg",
@@ -273,6 +273,7 @@ function pick(guess) {
   for (let i = 0; i < 10; i++) {
     text.innerText += numbers[i] + "\n";
   }
+
   if (numbers.includes(guess)) {
     text.innerText += "Right! You win 20 gold!";
     gold += 20;
